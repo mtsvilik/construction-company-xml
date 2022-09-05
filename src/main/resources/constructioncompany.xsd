@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="company">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="address">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="city" type="xs:string"/>
+                            <xs:element name="street" type="xs:string"/>
+                            <xs:element name="houseNumber" type="xs:positiveInteger"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="bankAccount">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="accountNumber" type="xs:positiveInteger"/>
+                            <xs:element name="dateOfCreate" type="xs:date"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="customers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="customer" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="firstName" type="xs:string"/>
+                                        <xs:element name="lastName" type="xs:string"/>
+                                        <xs:element name="address">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="city" type="xs:string"/>
+                                                    <xs:element name="street" type="xs:string"/>
+                                                    <xs:element name="houseNumber" type="xs:positiveInteger"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="passport">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="passportNumber" type="xs:positiveInteger"/>
+                                                    <xs:element name="dateOfIssue" type="xs:date"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="budget" type="xs:decimal"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="employees">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="employee" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="firstName" type="xs:string"/>
+                                        <xs:element name="lastName" type="xs:string"/>
+                                        <xs:element name="address">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="city" type="xs:string"/>
+                                                    <xs:element name="street" type="xs:string"/>
+                                                    <xs:element name="houseNumber" type="xs:positiveInteger"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="passport">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="passportNumber" type="xs:positiveInteger"/>
+                                                    <xs:element name="dateOfIssue" type="xs:date"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="position" type="xs:string"/>
+                                        <xs:element name="salary" type="xs:decimal"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="projects">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="project" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="foundationDate" type="xs:date"/>
+                                        <xs:element name="price" type="xs:decimal"/>
+                                        <xs:element name="square" type="xs:positiveInteger"/>
+                                        <xs:element name="numbersOfRooms" type="xs:positiveInteger"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="buildingMaterials">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="buildingMaterial" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="quantity" type="xs:positiveInteger"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="equipments">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="equipment" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="dateOfRelease" type="xs:date"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="vehicles">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="vehicle" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="engine" type="xs:string"/>
+                                        <xs:element name="dateOfRelease" type="xs:date"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="name" use="required"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

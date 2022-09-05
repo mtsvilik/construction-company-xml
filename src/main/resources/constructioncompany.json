@@ -1,0 +1,135 @@
+{
+  "name": "KMK-INVEST",
+  "address": {
+    "city": "Minsk",
+    "street": "Nemiga",
+    "houseNumber": 5
+  },
+  "bankAccount": {
+    "accountNumber": 6896745,
+    "dateOfCreate": "2011-10-11"
+  },
+  "customers": [
+    {
+      "firstName": "Ivan",
+      "lastName": "Petrov",
+      "address": {
+        "city": "Minsk",
+        "street": "Kosmonavtov",
+        "houseNumber": 14
+      },
+      "passport": {
+        "passportNumber": 345678,
+        "dateOfIssue": "2014-10-14"
+      },
+      "budget": "50000"
+    },
+    {
+      "firstName": "Mihail",
+      "lastName": "Ivanov",
+      "address": {
+        "city": "Minsk",
+        "street": "Esenina",
+        "houseNumber": 30
+      },
+      "passport": {
+        "passportNumber": 876543,
+        "dateOfIssue": "2011-12-13"
+      },
+      "budget": "200000"
+    }
+  ],
+  "employees": [
+    {
+      "firstName": "Oleg",
+      "lastName": "Sergeev",
+      "address": {
+        "city": "Minsk",
+        "street": "Krasnaya",
+        "houseNumber": 30
+      },
+      "passport": {
+        "passportNumber": 111543,
+        "dateOfIssue": "2015-12-13"
+      },
+      "position": "Manager",
+      "salary": "1500"
+    },
+    {
+      "firstName": "Olga",
+      "lastName": "Maksimova",
+      "address": {
+        "city": "Minsk",
+        "street": "Slobodskaya",
+        "houseNumber": 113
+      },
+      "passport": {
+        "passportNumber": 734543,
+        "dateOfIssue": "2018-12-01"
+      },
+      "position": "Accountant",
+      "salary": "1250"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Green House",
+      "foundationDate": "2020-12-12",
+      "price": "150000",
+      "square": 105,
+      "numberOfRooms": 5
+    },
+    {
+      "title": "White House",
+      "foundationDate": "2022-01-12",
+      "price": "300000",
+      "square": 215,
+      "numberOfRooms": 8
+    }
+  ],
+  "buildingMaterials": [
+    {
+      "title": "Concrete",
+      "quantity": 200
+    },
+    {
+      "title": "Wood",
+      "quantity": 500
+    },
+    {
+      "title": "Metal",
+      "quantity": 1000
+    }
+  ],
+  "equipments": [
+    {
+      "title": "Crane tower",
+      "dateOfRelease": "2015-11-13"
+    },
+    {
+      "title": "Mixer concrete",
+      "dateOfRelease": "2013-11-12"
+    },
+    {
+      "title": "Generator",
+      "dateOfRelease": "2018-11-13"
+    }
+  ],
+  "vehicles": [
+    {
+      "title": "Mercedes Benz",
+      "engine": "V8",
+      "dateOfRelease": "2020-03-10"
+    },
+    {
+      "title": "Volkswagen Transporter",
+      "engine": "V3",
+      "dateOfRelease": "2026-03-15"
+    },
+    {
+      "title": "BMW 7",
+      "engine": "V7",
+      "dateOfRelease": "2021-05-10"
+    }
+  ]
+}
