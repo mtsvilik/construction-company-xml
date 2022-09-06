@@ -95,7 +95,7 @@
                                         <xs:element name="foundationDate" type="xs:date"/>
                                         <xs:element name="price" type="xs:decimal"/>
                                         <xs:element name="square" type="xs:positiveInteger"/>
-                                        <xs:element name="numbersOfRooms" type="xs:positiveInteger"/>
+                                        <xs:element name="numberOfRooms" type="xs:positiveInteger"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>

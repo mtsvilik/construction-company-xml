@@ -1,6 +1,5 @@
 package com.solvd.constructioncompanyxml.company;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.solvd.constructioncompanyxml.human.Customer;
 import com.solvd.constructioncompanyxml.human.Employee;

@@ -79,14 +79,14 @@
             <foundationDate>2020-12-12</foundationDate>
             <price>150000</price>
             <square>105</square>
-            <numbersOfRooms>5</numbersOfRooms>
+            <numberOfRooms>5</numberOfRooms>
         </project>
         <project>
             <title>White House</title>
             <foundationDate>2022-01-12</foundationDate>
             <price>300000</price>
             <square>215</square>
-            <numbersOfRooms>8</numbersOfRooms>
+            <numberOfRooms>8</numberOfRooms>
         </project>
     </projects>
     <buildingMaterials>
