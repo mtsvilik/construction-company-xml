@@ -8,7 +8,6 @@ import com.solvd.constructioncompanyxml.parser.json.DateDeserializer;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -16,7 +15,6 @@ import java.time.LocalDate;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Project {
 
-    @XmlElement(name = "title")
     private String title;
 
     @XmlJavaTypeAdapter(LocalDateAdapter.class)
@@ -27,14 +25,8 @@ public class Project {
     @JsonDeserialize(using = BigDecimalDeserializer.class)
     private BigDecimal price;
 
-    @XmlElement(name = "square")
     private Integer square;
-
-    @XmlElement(name = "numberOfRooms")
     private Integer numberOfRooms;
-
-    public Project() {
-    }
 
     public String getTitle() {
         return title;

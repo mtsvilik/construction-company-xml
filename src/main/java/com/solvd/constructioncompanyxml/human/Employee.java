@@ -8,34 +8,21 @@ import com.solvd.constructioncompanyxml.parser.json.BigDecimalDeserializer;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.math.BigDecimal;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Employee {
 
-    @XmlElement(name = "firstName")
     private String firstName;
-
-    @XmlElement(name = "lastName")
     private String lastName;
-
-    @XmlElement(name = "address")
     private Address address;
-
-    @XmlElement(name = "passport")
     private Passport passport;
-
-    @XmlElement(name = "position")
     private String position;
 
     @XmlJavaTypeAdapter(BigDecimalAdapter.class)
     @JsonDeserialize(using = BigDecimalDeserializer.class)
     private BigDecimal salary;
-
-    public Employee() {
-    }
 
     public String getFirstName() {
         return firstName;

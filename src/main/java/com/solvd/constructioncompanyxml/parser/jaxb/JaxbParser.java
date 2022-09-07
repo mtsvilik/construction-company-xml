@@ -11,6 +11,8 @@ import com.solvd.constructioncompanyxml.project.Project;
 import com.solvd.constructioncompanyxml.resource.BuildingMaterial;
 import com.solvd.constructioncompanyxml.resource.Equipment;
 import com.solvd.constructioncompanyxml.resource.Vehicle;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -18,6 +20,8 @@ import javax.xml.bind.Unmarshaller;
 import java.io.File;
 
 public class JaxbParser implements IParser {
+
+    private static final Logger LOGGER = LogManager.getLogger(JaxbParser.class);
 
     @Override
     public Company parse(String fileName) {
@@ -31,7 +35,7 @@ public class JaxbParser implements IParser {
             companyJaxb = (Company) unmarshaller.unmarshal(new File(fileName));
 
         } catch (JAXBException ex) {
-            ex.printStackTrace();
+            LOGGER.error(ex);
         }
         return companyJaxb;
     }
