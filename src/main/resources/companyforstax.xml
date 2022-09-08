@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<company name="KMK-INVEST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="companyforstax.xsd">
+    <bankAccount>
+        <accountNumber>6896745</accountNumber>
+        <dateOfCreate>2011-10-11</dateOfCreate>
+    </bankAccount>
+    <customers>
+        <customer>
+            <firstName>Ivan</firstName>
+            <lastName>Petrov</lastName>
+            <passport>
+                <passportNumber>345678</passportNumber>
+                <dateOfIssue>2014-10-14</dateOfIssue>
+            </passport>
+            <budget>50000</budget>
+        </customer>
+        <customer>
+            <firstName>Mihail</firstName>
+            <lastName>Ivanov</lastName>
+            <passport>
+                <passportNumber>876543</passportNumber>
+                <dateOfIssue>2011-12-13</dateOfIssue>
+            </passport>
+            <budget>200000</budget>
+        </customer>
+    </customers>
+    <buildingMaterials>
+        <buildingMaterial>
+            <title>Concrete</title>
+            <quantity>200</quantity>
+        </buildingMaterial>
+        <buildingMaterial>
+            <title>Wood</title>
+            <quantity>500</quantity>
+        </buildingMaterial>
+        <buildingMaterial>
+            <title>Metal</title>
+            <quantity>1000</quantity>
+        </buildingMaterial>
+    </buildingMaterials>
+</company>
+
+

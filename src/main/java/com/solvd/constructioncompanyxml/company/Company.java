@@ -19,45 +19,38 @@ public class Company {
 
     @XmlAttribute
     private String name;
-
-    @XmlElement(name = "address")
     private Address address;
-
-    @XmlElement(name = "bankAccount")
     private BankAccount bankAccount;
 
-    @XmlElementWrapper(name = "customers")
+    @XmlElementWrapper
     @XmlElement(name = "customer")
     @JsonProperty("customers")
     private List<Customer> customers;
 
-    @XmlElementWrapper(name = "employees")
+    @XmlElementWrapper
     @XmlElement(name = "employee")
     @JsonProperty("employees")
     private List<Employee> employees;
 
-    @XmlElementWrapper(name = "projects")
+    @XmlElementWrapper
     @XmlElement(name = "project")
     @JsonProperty("projects")
     private List<Project> projects;
 
-    @XmlElementWrapper(name = "buildingMaterials")
+    @XmlElementWrapper
     @XmlElement(name = "buildingMaterial")
     @JsonProperty("buildingMaterials")
     private List<BuildingMaterial> buildingMaterials;
 
-    @XmlElementWrapper(name = "equipments")
+    @XmlElementWrapper
     @XmlElement(name = "equipment")
     @JsonProperty("equipments")
     private List<Equipment> equipments;
 
-    @XmlElementWrapper(name = "vehicles")
+    @XmlElementWrapper
     @XmlElement(name = "vehicle")
     @JsonProperty("vehicles")
     private List<Vehicle> vehicles;
-
-    public Company() {
-    }
 
     public String getName() {
         return name;
